@@ -1,0 +1,37 @@
+{
+  "npm": true,
+  "lint": {
+    "rules": ["polymer-3"]
+  },
+  "sources": [
+    "404.html",
+    "locales.json",
+    "fake_data/fake_data.json",
+    "node_modules/@polymer/font-roboto-local/fonts/roboto/*.ttf",
+    "node_modules/@polymer/font-roboto-local/fonts/robotomono/*.ttf",
+    "icons/icon48.png",
+    "icons/icon72.png",
+    "icons/icon128.png",
+    "icons/icon256.png",
+    "icons/icon512.png",
+    "icons/icon.svg"
+  ],
+  "extraDependencies": ["manifest.json"],
+  "builds": [
+    {
+      "name": "es6-bundled",
+      "browserCapabilities": ["es2015", "modules"],
+      "js": {
+        "minify": true
+      },
+      "css": {
+        "minify": true
+      },
+      "html": {
+        "minify": true
+      },
+      "bundle": true,
+      "addServiceWorker": true
+    }
+  ]
+}

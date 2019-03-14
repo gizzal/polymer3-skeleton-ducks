@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes" />
+
+    <title>app-skeleton test</title>
+
+    <script src="../../node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+    <script src="../../node_modules/wct-browser-legacy/browser.js"></script>
+    <script src="../../node_settings.js"></script>
+    <script type="module" src="../../src/app-skeleton/app-skeleton.js"></script>
+  </head>
+
+  <body>
+    <test-fixture id="basic">
+      <template>
+        <app-skeleton></app-skeleton>
+      </template>
+    </test-fixture>
+
+    <script>
+      suite("app-skeleton", function() {
+        test("instantiating the element with default properties works", function() {
+          var element = fixture("basic");
+          assert.equal(element.localName, "app-skeleton");
+        });
+      });
+    </script>
+  </body>
+</html>

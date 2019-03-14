@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled" />
+    <meta name="theme-color" content="#1B6776" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <script type="module">
+      import "@polymer/font-roboto-local/roboto.js";
+      window.polymerSkipLoadingFontRoboto = true;
+    </script>
+
+    <title>App sekeleton</title>
+    <meta name="description" content="Portavita Polymer 3 app template" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Roboto;
+        -webkit-user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+      }
+    </style>
+
+    <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+    <script type="module" src="/src/app-skeleton/app-skeleton.js"></script>
+
+    <!-- See https://goo.gl/OOhYW5 -->
+    <link rel="manifest" href="manifest.json" />
+
+    <link rel="icon" sizes="48x48 72x72 96x96 128x128 256x256" href="icons/icon.svg" />
+    <link rel="icon" sizes="48x48" href="icons/icon48.png" />
+    <link rel="icon" sizes="72x72" href="icons/icon72.png" />
+    <link rel="icon" sizes="128x128" href="icons/icon128.png" />
+    <link rel="icon" sizes="256x256" href="icons/icon256.png" />
+    <link rel="icon" sizes="512x512" href="icons/icon512.png" />
+    <link rel="apple-touch-icon" href="icons/icon256.png" />
+    <link rel="apple-touch-startup-image" href="icons/icon256.png" />
+
+    <script src="node_settings.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("service-worker.js");
+      }
+    </script>
+    <script src="/node_modules/moment/min/moment.min.js"></script>
+    <script src="/node_modules/moment/locale/nl.js"></script>
+    <script src="/node_modules/moment/locale/en-gb.js"></script>
+
+    <noscript>Your browser does not support JavaScript!</noscript>
+  </head>
+
+  <body ontouchstart="">
+    <app-skeleton></app-skeleton>
+  </body>
+</html>

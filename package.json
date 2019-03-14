@@ -1,0 +1,37 @@
+{
+  "name": "app-skeleton",
+  "scripts": {
+    "start": "polymer serve"
+  },
+  "description": "Portavita Polymer 3 app template.",
+  "license": "Internal Portavita License v1 (IPLv1)",
+  "dependencies": {
+    "@polymer/app-layout": "^3.0.1",
+    "@polymer/font-roboto-local": "^3.0.2",
+    "@polymer/iron-icons": "^3.0.1",
+    "@polymer/paper-button": " ^3.0.1",
+    "@polymer/paper-icon-button": "^3.0.1",
+    "@polymer/paper-item": "^3.0.1",
+    "@polymer/polymer": "^3.0.0",
+    "@portavita/js-portavita-utilities": "git+ssh://git@devhomes.portavita.nl:js-portavita-utilities#topic/team/polymer3",
+    "@portavita/pv-app-localize-behavior": "git+ssh://git@devhomes.portavita.nl:pv-app-localize-behavior#topic/team/polymer3",
+    "@portavita/pv-corporate-logo": "git+ssh://git@devhomes.portavita.nl:pv-corporate-logo#topic/team/polymer3",
+    "moment": "^2.24.0",
+    "@portavita/pv-profile-info": "git+ssh://git@devhomes.portavita.nl:pv-profile-info#topic/team/polymer3",
+    "@portavita/pv-styles": "git+ssh://git@devhomes.portavita.nl:pv-styles#topic/team/polymer3",
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "pwa-helpers": "^0.9.0",
+    "redux": "^4.0.1",
+    "redux-duck": "^1.0.2",
+    "redux-saga": "^0.16.2",
+    "reselect": "^4.0.0"
+  },
+  "devDependencies": {
+    "wct-browser-legacy": "^1.0.0"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": true,
+    "bracketSpacing": false
+  }
+}

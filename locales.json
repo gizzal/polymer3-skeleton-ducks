@@ -1,0 +1,14 @@
+{
+  "en-PV": {
+    "increase": "increase",
+    "decrease": "decrease",
+    "account": "account",
+    "sign out": "Sign out"
+  },
+  "nl-NL": {
+    "increase": "ophogen",
+    "decrease": "verlagen",
+    "account": "accountbeheer",
+    "sign out": "Uitloggen"
+  }
+}
